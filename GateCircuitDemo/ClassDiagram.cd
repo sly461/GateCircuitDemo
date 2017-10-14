@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="元器件基类&#xD;&#xA;变量&#xD;&#xA;1.m_Inpins和m_OutPins 输入输出引脚集合&#xD;&#xA;2.m_isSelected 是否选中该门&#xD;&#xA;3.m_Pen和m_SelectedPen分别是选中和没选中绘制用笔&#xD;&#xA;4.m_Position 门电路位置&#xD;&#xA;5.m_Rect 门电路选中矩形框&#xD;&#xA;方法&#xD;&#xA;1.Draw为纯虚函数，统一接口绘制所有门电路&#xD;&#xA;2.DrawRect 画选中矩形框&#xD;&#xA;3.FindLatePin 找最近的引脚&#xD;&#xA;4.MoveTo 移动函数&#xD;&#xA;5.NotSelected和Selected分别是没选中和选中的方法&#xD;&#xA;6.Selected 是选中引脚&#xD;&#xA;">
+    <Position X="0.635" Y="1.844" Height="4.365" Width="1.846" />
+  </Comment>
+  <Comment CommentText="引脚类&#xD;&#xA;变量&#xD;&#xA;1.m_Position 位置&#xD;&#xA;2.m_LinkPins 与此引脚相连的引脚集合&#xD;&#xA;3.m_mousePoint 鼠标位置&#xD;&#xA;4.m_SelectedPen是否被选中&#xD;&#xA;5.m_SelectedPen 选中时绘制的笔&#xD;&#xA;方法&#xD;&#xA;1.AddLinkPin 增加与此引脚相连的引脚&#xD;&#xA;2.Draw 绘制方法&#xD;&#xA;3.GetPosition 返回位置&#xD;&#xA;4.NearMe 判断鼠标是否离自己很近&#xD;&#xA;5.NotSelected和Selected分别是没选中和选中方法&#xD;&#xA;6.Move 移动函数&#xD;&#xA;7.SetPoint 设置位置&#xD;&#xA;8.SetMousePoint 设置鼠标位置">
+    <Position X="9.531" Y="1.979" Height="3.979" Width="1.752" />
+  </Comment>
+  <Class Name="CAboutDlg" Collapsed="true">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAABAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GateCircuitDemo.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CANDGate">
+    <Position X="5.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAEAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>ANDGate.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CGate">
+    <Position X="2.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAQAACIECAAAgAAAAAAAAAAQAApEAEAAAQAAAQAAAI=</HashCode>
+      <FileName>Gate.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CGateCircuitDemoApp" Collapsed="true">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAAAAAABQAAAAAQCAAARAAACCAA=</HashCode>
+      <FileName>GateCircuitDemo.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CGateCircuitDemoDoc" Collapsed="true">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAEAAAAAAAACAAAgAAgASggAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GateCircuitDemoDoc.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CGateCircuitDemoView" Collapsed="true">
+    <Position X="3.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAYAAABABAAAAgiQBQgAFEgBAAAAEAAAwJACQYAQU=</HashCode>
+      <FileName>GateCircuitDemoView.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CMainFrame" Collapsed="true">
+    <Position X="11" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAACAAAiAAAoCEAAgAgAABQAAAAAhA=</HashCode>
+      <FileName>MainFrm.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CNotGate">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAggAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NotGate.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CPin">
+    <Position X="7.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAEAAAqAAAgAAAQACAAAAAAABIAEAQAAAAAQAAAI=</HashCode>
+      <FileName>Pin.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>
