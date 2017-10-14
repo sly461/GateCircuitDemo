@@ -1,2 +1,2 @@
 # GateCircuitDemo
-MFC绘制门电路hhh
+MFC绘制门电路
